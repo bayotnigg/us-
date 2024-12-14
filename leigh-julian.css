@@ -1,0 +1,132 @@
+:root {
+	--size-small: 1.5rem;
+	--size-mid: 2rem;
+	--size-padding: 15px;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	scroll-behavior: smooth;
+}
+
+body {
+	background: url(Images/yay.png) top no-repeat;
+}
+
+.hello {
+	display: flex;
+	height: 100%;
+	position: absolute;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
+.yay {
+	writing-mode: vertical-lr;
+	margin-left: 55px;
+	color: rgba(255, 255, 255, 0.164);
+	pointer-events: none;
+}
+
+header {
+	background-image: linear-gradient(
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.45),
+		rgba(0, 0, 0, 0)
+	);
+	padding: 55px;
+	display: flex;
+}
+
+.title {
+	width: 50%;
+	display: flex;
+	justify-content: end;
+}
+
+.title a {
+	color: white;
+	font-size: var(--size-small);
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+}
+
+.inner-navbar {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	width: 50%;
+}
+
+.inner-navbar a {
+	color: white;
+	font-size: var(--size-small);
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+}
+
+.main-div {
+	min-width: 800px;
+	display: flex;
+	color: white;
+	padding-left: 50px;
+	padding-right: 50px;
+	gap: 1rem;
+}
+
+.inner-right {
+	text-align: left;
+}
+
+.links {
+	transition: all 0.2s;
+}
+
+.links:hover {
+	transform: translateY(-5px);
+}
+
+.left {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	font-size: 2em;
+}
+
+.hi {
+	color: rgb(248, 115, 166);
+	text-decoration: underline rgb(248, 115, 166) 2px;
+	font-weight: 700;
+}
+
+.right {
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	font-size: 2em;
+}
+
+.text-right,
+.text-left {
+	font-size: 1rem;
+}
+
+.text-left {
+	text-align: right;
+}
+
+.text {
+	color: white;
+	font-size: var(--size-small);
+}
+
+#playlist {
+	border-radius: 12px;
+	width: 28rem;
+}
+
+.section-us-main {
+	display: flex;
+	justify-content: center;
+}
