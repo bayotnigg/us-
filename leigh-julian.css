@@ -1,7 +1,8 @@
 /* base values for var */
 
 :root {
-	--size-small: 1.5rem;
+	--size-small: 1rem;
+	--size-legacySmall: 1.5rem;
 	--size-mid: 2rem;
 	--size-padding: 15px;
 	--size-big: 3rem;
@@ -73,7 +74,7 @@ header {
 
 .title a {
 	color: white;
-	font-size: var(--size-small);
+	font-size: var(--size-legacySmall);
 	letter-spacing: 0.1rem;
 	text-decoration: none;
 }
@@ -87,7 +88,7 @@ header {
 
 .inner-navbar a {
 	color: white;
-	font-size: var(--size-small);
+	font-size: var(--size-legacySmall);
 	letter-spacing: 0.1rem;
 	text-decoration: none;
 }
@@ -109,7 +110,6 @@ main {
 	padding-left: 50px;
 	padding-right: 50px;
 	gap: 1rem;
-	max-height: 800px;
 }
 
 .inner-right {
@@ -147,17 +147,23 @@ main {
 
 .text {
 	color: white;
-	font-size: var(--size-small);
+	font-size: var(--size-legacySmall);
 }
 
 .title-main {
-	color: rgb(147, 197, 255);
+	color: rgb(111, 178, 253);
 	font-size: var(--size-mid);
+}
+
+.text-main {
+	font-size: var(--size-small);
+	width: 50%;
+	color: white;
 }
 
 #playlist {
 	border-radius: 12px;
-	width: 28rem;
+	max-width: 28rem;
 }
 
 .gradient {
@@ -166,13 +172,10 @@ main {
 		rgba(0, 0, 0, 0.45),
 		rgba(0, 0, 0, 0)
 	);
-	width: 100%;
 }
 
 .section-us-main {
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
-	align-items: center;
 	padding: 50px;
 }
