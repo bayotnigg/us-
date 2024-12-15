@@ -1,8 +1,13 @@
+/* base values for var */
+
 :root {
 	--size-small: 1.5rem;
 	--size-mid: 2rem;
 	--size-padding: 15px;
+	--size-big: 3rem;
 }
+
+/* start of default sheets */
 
 * {
 	padding: 0px;
@@ -16,23 +21,22 @@ html {
 }
 
 .background-first {
-	background-image: url(Images/yay.png);
+	background-image: url(/Images/yay.png);
 }
 
 .background-second {
-	background-image: url(Images/background2.png);
+	background-image: url(/Images/background2.png);
 }
 
 .background-first,
 .background-second {
-	/* Full height */
 	height: 100%;
-
-	/* Center and scale the image nicely */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+/* side text of homepage */
 
 .hello {
 	display: flex;
@@ -48,6 +52,8 @@ html {
 	color: rgba(255, 255, 255, 0.164);
 	pointer-events: none;
 }
+
+/* navbar */
 
 header {
 	background-image: linear-gradient(
@@ -86,8 +92,18 @@ header {
 	text-decoration: none;
 }
 
-.main-div {
-	min-width: 800px;
+.links {
+	transition: all 0.2s;
+}
+
+.links:hover {
+	transform: translateY(-5px);
+}
+
+/* body */
+
+main {
+	max-width: 100%;
 	display: flex;
 	color: white;
 	padding-left: 50px;
@@ -100,14 +116,6 @@ header {
 	text-align: left;
 }
 
-.links {
-	transition: all 0.2s;
-}
-
-.links:hover {
-	transform: translateY(-5px);
-}
-
 .left {
 	width: 50%;
 	height: 100%;
@@ -115,7 +123,7 @@ header {
 	font-size: 2em;
 }
 
-.hi {
+.bold {
 	color: rgb(248, 115, 166);
 	text-decoration: underline rgb(248, 115, 166) 2px;
 	font-weight: 700;
@@ -142,14 +150,14 @@ header {
 	font-size: var(--size-small);
 }
 
-#playlist {
-	border-radius: 12px;
-	width: 28rem;
-}
-
 .title-main {
 	color: rgb(147, 197, 255);
 	font-size: var(--size-mid);
+}
+
+#playlist {
+	border-radius: 12px;
+	width: 28rem;
 }
 
 .gradient {
