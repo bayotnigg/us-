@@ -21,11 +21,11 @@ html {
 }
 
 .background-first {
-	background-image: url(/Images/yay.png);
+	background-image: url(Images/yay.png);
 }
 
 .background-second {
-	background-image: url(/Images/background2.png);
+	background-image: url(Images/background2.png);
 }
 
 .background-first,
