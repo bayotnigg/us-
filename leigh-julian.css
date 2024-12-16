@@ -8,7 +8,15 @@
 	--size-big: 3rem;
 }
 
-/* start of default sheets */
+/* blur effect */
+.blur {
+	-webkit-filter: blur(8px);
+	filter: blur(8px);
+	position: absolute;
+	pointer-events: none;
+}
+
+/* default sheets */
 
 * {
 	padding: 0px;
@@ -20,6 +28,8 @@ body,
 html {
 	height: 100%;
 }
+
+/* backgrounds */
 
 .background-first {
 	background-image: url(Images/yay.png);
@@ -45,23 +55,19 @@ html {
 	position: absolute;
 	align-items: center;
 	font-size: 1.5rem;
+	pointer-events: none;
 }
 
 .yay {
 	writing-mode: vertical-lr;
 	margin-left: 55px;
 	color: rgba(255, 255, 255, 0.164);
-	pointer-events: none;
+	position: inherit;
 }
 
 /* navbar */
 
 header {
-	background-image: linear-gradient(
-		rgba(0, 0, 0, 0.7),
-		rgba(0, 0, 0, 0.45),
-		rgba(0, 0, 0, 0)
-	);
 	padding: 55px;
 	display: flex;
 }
@@ -112,8 +118,48 @@ main {
 	gap: 1rem;
 }
 
-.inner-right {
+.button-housing {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	max-height: fit-content;
+	height: 150px;
+}
+
+.next-page {
+	padding: 15px;
+	border-radius: var(--size-small);
+	border: solid 5px rgb(221, 177, 241);
+	cursor: pointer;
+	width: fit-content;
+	height: fit-content;
+	background-color: rgb(248, 115, 166);
+	color: white;
+	text-shadow: -5px 5px rgba(223, 89, 140, 0.438);
+	font-size: var(--size-legacySmall);
+	transition: all 200ms;
+	text-decoration: none;
+}
+
+.next-page {
+	z-index: 1;
+}
+
+.next-page:hover {
+	transform: translate(5px, -5px);
+}
+
+.next-page:active {
+	transform: translate(5px, 5px);
+}
+
+.inner-left {
 	text-align: left;
+}
+
+.inner-right {
+	text-align: right;
 }
 
 .left {
@@ -136,13 +182,17 @@ main {
 	font-size: 2em;
 }
 
+.title-right,
+.title-left {
+	font-size: var(--size-mid);
+}
 .text-right,
 .text-left {
-	font-size: 1rem;
+	font-size: var(--size-small);
 }
 
 .text-left {
-	text-align: right;
+	text-align: left;
 }
 
 .text {
@@ -150,9 +200,12 @@ main {
 	font-size: var(--size-legacySmall);
 }
 
+/* second part */
+
 .title-main {
 	color: rgb(111, 178, 253);
 	font-size: var(--size-mid);
+	text-shadow: -5px 5px rgba(111, 165, 226, 0.404);
 }
 
 .text-main {
@@ -164,6 +217,7 @@ main {
 #playlist {
 	border-radius: 12px;
 	max-width: 28rem;
+	box-shadow: -5px 5px rgba(129, 238, 156, 0.288);
 }
 
 .gradient {
